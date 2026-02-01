@@ -20,7 +20,8 @@ public class ShoppingCart {
     public double totalPriceWithDiscount() { // считаем общую сумму товаров со скидкой
         double total = 0;
         for (Food item : items) {
-            total += item.getPrice() * item.getAmount() * item.getDiscount();
+            double discount = (100.0 - item.getDiscount()) / 100 ;
+            total += item.getPrice() * item.getAmount() * discount;
         }
         return total;
     }

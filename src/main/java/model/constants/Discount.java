@@ -1,6 +1,6 @@
 package model.constants;
 
 public class Discount {
-    public static double RED_DISCOUNT = 0.6;
-    public static double DEFAULT_DISCOUNT = 1;
+    public static final double RED_DISCOUNT = 60;
+    public static final double DEFAULT_DISCOUNT = 0;
 }

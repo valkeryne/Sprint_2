@@ -2,13 +2,13 @@ package model;
 
 import model.constants.Discount;
 
-public abstract class Food {
+public abstract class Food implements Discountable {
     protected int amount; //amount — количество продукта в килограммах (целое число);
     protected double price; //price — цена за единицу (вещественное число);
     protected boolean isVegetarian; //isVegetarian — флаг, который показывает, вегетарианский ли продукт.
     //Поля должны быть доступны только из классов-потомков.
 
-    public Food(int amount, double price, boolean isVegetarian) {
+    protected Food(int amount, double price, boolean isVegetarian) {
         this.amount = amount;
         this.price = price;
         this.isVegetarian = isVegetarian;
